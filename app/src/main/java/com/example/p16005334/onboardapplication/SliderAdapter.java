@@ -36,7 +36,7 @@ public class SliderAdapter extends PagerAdapter {
     };
 
     public String[] slide_descs = { //Descripting texts
-            "Achieve Me est une application de succès dans la vie courante, un peu comme dans les jeux vidéos, des petits défis quotidiens sont disponibles, lancez-vous !",
+            "Achieve Me est une application de succès dans la vie courante, un peu comme dans les jeux vidéos, des petits défis quotidiens sont disponibles, lancez-vous ! \n (Swipez vers la gauche :D)",
             "Pour réaliser vos succès vous pourrez vous balader ou encore cuisiner de délicieux mets, plusieurs catégories d'achievements sont d'ores et déjà disponibles !",
             "Ajoutez vos amis pour partager votre avancée avec eux, à plusieurs, on s'amuse forcément plus, vous pourrez dans une version prochaine, leur proposer vos défis les plus fous ! Let's gooo bois !"
     };

@@ -3,4 +3,7 @@
     <string name="content">The page description.</string>
     <string name="tutorial">Incroyable ce petit tutoriel non ?</string>
     <string name="back">Retour au tutoriel</string>
+    <string name="pref_previously_started" />
+    <string name="goToActivity">Go seconde activitée</string>
+    <string name="firstLaunchSentence">Si vous voyez ceci et non le tuto, ce n\'est pas votre premier lancement !</string>
 </resources>
