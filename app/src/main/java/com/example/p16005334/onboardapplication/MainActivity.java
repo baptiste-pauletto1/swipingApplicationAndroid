@@ -56,10 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 if (currentPage < mDots.length -1) {
                     mSlideViewPager.setCurrentItem(currentPage + 1);
                 } else {
-                    Toast.makeText(MainActivity.this,"Test", Toast.LENGTH_SHORT)
-                            .show();
-//                    Intent intent = SecondActivity.makeIntent(MainActivity.this);
-//                    startActivity(intent);
+                    Intent intent = SecondActivity.makeIntent(MainActivity.this);
+                    startActivity(intent);
                 }
             }
         });

@@ -15,30 +15,30 @@ import android.widget.TextView;
 
 public class SliderAdapter extends PagerAdapter {
 
-    Context context;
-    LayoutInflater layoutInflater;
+    private Context context;
+    private LayoutInflater layoutInflater;
 
     public SliderAdapter(Context context){
         this.context = context;
     }
 
     //Arrays
-    public int[] slide_images = {
-            R.drawable.eat_icon,
-            R.drawable.sleep_icon,
-            R.drawable.code_icon
+    public int[] slide_images = { //Different pages icons
+            R.drawable.fp_icon,
+            R.drawable.sp_icon,
+            R.drawable.tp_icon
     };
 
-    public String[] slide_headings = {
-            "EAT",
-            "SLEEP",
-            "CODE"
+    public String[] slide_headings = { //Headers texts
+            "Bienvenue",
+            "Réalisez",
+            "Partagez"
     };
 
-    public String[] slide_descs = {
-            "Hello, j'adore manger personnellement !",
-            "Hello, moi je préfère largement dormir oui",
-            "Hello, après tout, moi ce que je préfère c'est coder hein !"
+    public String[] slide_descs = { //Descripting texts
+            "Achieve Me est une application de succès dans la vie courante, un peu comme dans les jeux vidéos, des petits défis quotidiens sont disponibles, lancez-vous !",
+            "Pour réaliser vos succès vous pourrez vous balader ou encore cuisiner de délicieux mets, plusieurs catégories d'achievements sont d'ores et déjà disponibles !",
+            "Ajoutez vos amis pour partager votre avancée avec eux, à plusieurs, on s'amuse forcément plus, vous pourrez dans une version prochaine, leur proposer vos défis les plus fous ! Let's gooo bois !"
     };
 
     @Override
