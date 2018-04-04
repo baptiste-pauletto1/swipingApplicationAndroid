@@ -6,4 +6,8 @@
     <string name="pref_previously_started" />
     <string name="goToActivity">Go seconde activitée</string>
     <string name="firstLaunchSentence">Si vous voyez ceci et non le tuto, ce n\'est pas votre premier lancement !</string>
+    <string name="user">Paul CHALAS</string>
+    <string name="usermail">polochalas@gmail.com</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
