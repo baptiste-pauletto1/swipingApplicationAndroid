@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context="com.example.p16005334.onboardapplication.MainActivity">
+    tools:context="com.example.p16005334.onboardapplication.Tutorial">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPager"
@@ -32,7 +32,7 @@
         android:layout_alignBottom="@+id/dotsLayout"
         android:layout_alignParentStart="true"
         android:background="@android:color/transparent"
-        android:text="Précédent"
+        android:text="@string/prev"
         android:textColor="@color/colorTransparentWhite"
         android:visibility="invisible" />
 
@@ -43,7 +43,7 @@
         android:layout_alignBottom="@+id/dotsLayout"
         android:layout_alignParentEnd="true"
         android:background="@android:color/transparent"
-        android:text="Suivant"
+        android:text="@string/next"
         android:textColor="@color/colorTransparentWhite" />
 
 

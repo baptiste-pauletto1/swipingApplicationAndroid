@@ -5,16 +5,18 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.p16005334.onboardapplication.FirstActivity">
+    tools:context="com.example.p16005334.onboardapplication.Main">
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/frameLayoutContent"
         android:background="@drawable/main_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </LinearLayout>
+    </FrameLayout>
     
     <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
         app:headerLayout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
