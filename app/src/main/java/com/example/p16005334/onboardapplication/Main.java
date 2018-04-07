@@ -1,7 +1,5 @@
 package com.example.p16005334.onboardapplication;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -58,23 +56,23 @@ public class Main extends AppCompatActivity {
         Class fragmentClass;
         switch (menuItem.getItemId()){
             case (R.id.menu):
-                fragmentClass = MainMenu.class;
+                fragmentClass = MainMenuFragment.class;
                 break;
             case (R.id.profil):
-                fragmentClass = Profile.class;
+                fragmentClass = ProfileFragment.class;
                 break;
             case (R.id.succes):
-                fragmentClass = Achievement.class;
+                fragmentClass = AchievementFragment.class;
                 break;
             case (R.id.carte):
-                fragmentClass = Map.class;
+                fragmentClass = MapFragment.class;
                 break;
             case (R.id.tutoriel):
                 fragmentClass = TutorialFragment.class;
                 break;
                 //DECONNEXION MAYBE ?
             default:
-                fragmentClass = MainMenu.class;
+                fragmentClass = MainMenuFragment.class;
         }
         try {
             fragment = (android.support.v4.app.Fragment) fragmentClass.newInstance();

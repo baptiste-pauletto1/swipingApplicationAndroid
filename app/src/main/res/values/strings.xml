@@ -13,6 +13,10 @@
     <string name="next">Suivant</string>
     <string name="prev">Précédent</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="success" > Achievements </string>
+    <string name="main_menu_infos"> Dans ce menu, tu trouveras toutes les dernières informations concernant tes succès ou encore ceux qu\'ont réussi à réaliser tes amis et cela dès la prochaine mise à jour dans laquelle tu pourras ajouter des amis avec qui partager des défis !  </string>
+    <string name="main_menu_hint"> En attendant, les développeurs se reposent un peu, parce que les périodes de partiels, c\'est pas facile…</string>
+    <string name="image_desc">Little bird sleeping picture</string>
+    <string name="welcome">Hello toi !</string>
 </resources>
