@@ -36,6 +36,8 @@ public class Main extends AppCompatActivity {
         NavigationView mDrawer = (NavigationView) findViewById(R.id.navigationView);
         setupDrawerContent(mDrawer);
 
+//        mDrawer.setCheckedItem(R.id.menu);
+
         //Launch the tutorial just the first time !
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         boolean previouslyStarted = prefs.getBoolean(getString(R.string.pref_previously_started), false);
@@ -45,12 +47,12 @@ public class Main extends AppCompatActivity {
             edit.apply();
             showTutorial();
         }
+
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (mToggle.onOptionsItemSelected(item)) return true;
-        return super.onOptionsItemSelected(item);
+        return mToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
     private void showTutorial() {
