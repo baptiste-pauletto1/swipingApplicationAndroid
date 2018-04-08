@@ -60,8 +60,9 @@ public class Tutorial extends AppCompatActivity {
                 if (currentPage < mDots.length -1) {
                     mSlideViewPager.setCurrentItem(currentPage + 1);
                 } else {
-                    Intent intent = SecondActivity.makeIntent(Tutorial.this);
+                    Intent intent = Main.makeIntent(Tutorial.this);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

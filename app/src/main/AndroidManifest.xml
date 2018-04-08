@@ -19,7 +19,6 @@
         <activity android:name=".Tutorial">
 
         </activity>
-        <activity android:name=".SecondActivity" />
     </application>
 
 </manifest>

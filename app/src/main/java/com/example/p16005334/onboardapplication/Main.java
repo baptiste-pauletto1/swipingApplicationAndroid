@@ -1,5 +1,6 @@
 package com.example.p16005334.onboardapplication;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -10,6 +11,12 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.example.p16005334.onboardapplication.fragments.AchievementFragment;
+import com.example.p16005334.onboardapplication.fragments.MainMenuFragment;
+import com.example.p16005334.onboardapplication.fragments.MapFragment;
+import com.example.p16005334.onboardapplication.fragments.ProfileFragment;
+import com.example.p16005334.onboardapplication.fragments.TutorialFragment;
 
 public class Main extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -68,9 +75,11 @@ public class Main extends AppCompatActivity {
                 fragmentClass = MapFragment.class;
                 break;
             case (R.id.tutoriel):
+                //Need to find a proper way to close the fragment. Working atm, will look for it later BP
                 fragmentClass = TutorialFragment.class;
+                showTutorial();
+                finish();
                 break;
-                //DECONNEXION MAYBE ?
             default:
                 fragmentClass = MainMenuFragment.class;
         }
@@ -95,5 +104,9 @@ public class Main extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    public static Intent makeIntent(Context context) {
+        return new Intent(context, Main.class);
     }
 }
